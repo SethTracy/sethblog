@@ -1,0 +1,252 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    background-color: #f4f2ee;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin-right: 50px;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.order-now {
+    background-color: #feec80;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: rgb(129, 7, 7);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    margin-right: -5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #feec80;
+    color: rgb(129, 7, 7);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e6b935;
+}
+
+.coverphoto {
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.coverphoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.coverphoto img:first-child {
+    opacity: 1;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.logo-overlay img {
+    width: 1950px; 
+    height: auto;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.menu {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.order-summary {
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.food-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+button.animate {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.add-to-cart-button {
+    padding: 10px;
+    background-color: rgba(211, 46, 18);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f0c030;
+}
+
+.animate {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mainlogo img {
+    width: auto;
+    height: 280px;
+    margin-top: 11px;
+    margin-bottom: 10px;
+}
+
+.size {
+    text-align: center;
+    font-size: 40px;
+}
+
+button[type='submit'] {
+    padding: 10px 15px;
+    background-color: #d32e12; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button[type='submit']:hover {
+    background-color: #d32e12;
+}
+
+button[type='submit'][name='clear_cart'] {
+    background-color: #d32e12;
+}
+
+button[type='submit'][name='clear_cart']:hover {
+    background-color: #e53935;
+}
+
+input[type='number'] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+hr.solid {
+    border-top: 3px solid #d32e12;
+  }

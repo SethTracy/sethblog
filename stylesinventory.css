@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ck.png');
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: rgba(211,46,18);
+    padding: 15px;
+    color: white;
+    position: fixed; 
+    z-index: 1000;
+    width: 200px; 
+    height: 100vh; 
+    top: 0;
+    right: 0; 
+    box-sizing: border-box;
+}
+
+nav img {
+    width: 100%; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: rgba(129, 7, 7); 
+    border-radius: 4px;
+    padding-right: 0%;
+}
+
+nav ul li a:hover {
+    background-color: #e63939; 
+}
+
+.sidebar {
+    position: fixed;
+    left: 0; 
+    top: 0;
+    width: 200px;
+    background-color: rgba(211,46,18); 
+    padding: 20px 10px;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(129, 7, 7); 
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #e63939; 
+}
+
+.content {
+    margin-left: 220px; 
+    margin-right: 220px;
+    padding: 20px;
+}
+
+.food-container, .inventory-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.food-item, .inventory-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(19% - 20px); 
+    max-width: calc(19% - 20px); 
+}
+
+.food-image, .inventory-image {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 100px; 
+    border-radius: 4px;
+}
+
+.add-stock-form input, .add-stock-form select, .add-stock-form button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add-stock-form button {
+    background-color: rgba(129, 7, 7); 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.inventory-item form {
+    margin-top: 10px;
+}
+
+.content .sidebar p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+form button.delete-button {
+    background-color: #ff4c4c !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button.delete-button:hover {
+    background-color: #e60000 !important;
+}
+.inventory-container {
+    padding: 20px; 
+}
+
+.inventory-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.amount-input {
+    width: calc(100% - 22px); 
+    padding: 10px; 
+    margin-bottom: 1px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+.update-button {
+    background-color: rgba(211,46,18); 
+    color: white;
+    padding: 4px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.update-button:hover {
+    background-color:  rgba(129, 7, 7); 
+}
+
+.use-button {
+    background-color: rgba(211,46,18); 
+    color: white; 
+    padding: 4px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.use-button:hover {
+    background-color:  rgba(129, 7, 7); 
+}
